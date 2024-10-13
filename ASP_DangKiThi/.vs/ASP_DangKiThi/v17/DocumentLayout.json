@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Tuan\\Git\\ASP_DangKiThi\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|d:\\school\\hk5\\asp.net\\codes\\asp\\asp_dangkithi\\asp_dangkithi\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|d:\\school\\hk5\\asp.net\\codes\\asp\\asp_dangkithi\\asp_dangkithi\\views\\room\\createview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\views\\room\\createview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|d:\\school\\hk5\\asp.net\\codes\\asp\\asp_dangkithi\\asp_dangkithi\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|d:\\school\\hk5\\asp.net\\codes\\asp\\asp_dangkithi\\asp_dangkithi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -29,7 +62,63 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateView.cshtml",
+              "DocumentMoniker": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Room\\CreateView.cshtml",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Views\\Room\\CreateView.cshtml",
+              "ToolTip": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Room\\CreateView.cshtml",
+              "RelativeToolTip": "ASP_DangKiThi\\Views\\Room\\CreateView.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-13T10:54:19.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassController.cs",
+              "DocumentMoniker": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\ClassController.cs",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Controllers\\ClassController.cs",
+              "ToolTip": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\ClassController.cs",
+              "RelativeToolTip": "ASP_DangKiThi\\Controllers\\ClassController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:36:38.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "ASP_DangKiThi\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAADEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:20:27.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Controllers\\RoomController.cs",
+              "ToolTip": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "ASP_DangKiThi\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAwDgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:18:59.281Z",
+              "EditorCaption": ""
             }
           ]
         }

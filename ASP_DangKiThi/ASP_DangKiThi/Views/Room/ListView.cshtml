@@ -1,0 +1,39 @@
+﻿@model List<Room>
+
+@{
+	ViewData["Title"] = "Quản lý phòng học";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Quản lý phòng học</h1>
+
+<a type="button" class="btn btn-primary" asp-controller="Room" asp-action="CreateView">Thêm mới</a>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>
+				Mã phòng
+			</th>
+			<th>
+				Tên phòng
+			</th>
+			<th colspan="3">Thao tác</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.AutoId)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.RoomName)
+				</td>
+				<td class="text-center"><a asp-area="" asp-controller="Room" asp-action="EditView" asp-route-id="@item.AutoId">Edit</a></td>
+				<td class="text-center"><a asp-area="" asp-controller="Room" asp-action="DetailsView" asp-route-id="@item.AutoId">Details</a></td>
+				<td class="text-center"><a asp-area="" asp-controller="Room" asp-action="DeleteRoom" asp-route-id="@item.AutoId">Delete</a></td>
+			</tr>
+		}
+	</tbody>
+</table>
