@@ -4,13 +4,11 @@ using System.Diagnostics;
 
 namespace ASP_DangKiThi.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(db_ASP_ProjectContext objDBContext) : base(objDBContext)
         {
-            _logger = logger;
+
         }
 
         public IActionResult Index()

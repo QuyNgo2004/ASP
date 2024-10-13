@@ -1,0 +1,11 @@
+﻿[*.cs]
+
+# CS8600: Converting null literal or possible null value to non-nullable type.
+dotnet_diagnostic.CS8600.severity = none
+dotnet_diagnostic.MVC1000.severity = none
+dotnet_diagnostic.CS8602.severity = none
+dotnet_diagnostic.TS6387.severity = none
+dotnet_diagnostic.TS6385.severity = none
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = none

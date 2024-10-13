@@ -3379,9 +3379,9 @@ jQuery.each( {
 		}
 
 		// Support: IE 9 - 11 only, iOS 7 only, Android Browser <=4.3 only
-		// Treat the template element as a regular one in browsers that
+		// Treat the ASP_DangKiThi element as a regular one in browsers that
 		// don't support it.
-		if ( nodeName( elem, "template" ) ) {
+		if ( nodeName( elem, "ASP_DangKiThi" ) ) {
 			elem = elem.content || elem;
 		}
 

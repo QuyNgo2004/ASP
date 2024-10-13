@@ -1,7 +1,12 @@
+using ASP_DangKiThi.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<db_ASP_ProjectContext>(option =>
+    option.UseSqlServer(builder.Configuration.GetConnectionString("conn")));
 
 var app = builder.Build();
 

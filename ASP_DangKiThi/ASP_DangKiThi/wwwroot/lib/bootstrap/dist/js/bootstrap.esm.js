@@ -3520,7 +3520,7 @@ const CLASS_PREFIX$1 = 'bs-tooltip';
 const DISALLOWED_ATTRIBUTES = new Set(['sanitize', 'allowList', 'sanitizeFn']);
 const DefaultType$3 = {
   animation: 'boolean',
-  template: 'string',
+  ASP_DangKiThi: 'string',
   title: '(string|element|function)',
   trigger: 'string',
   delay: '(number|object)',
@@ -3546,7 +3546,7 @@ const AttachmentMap = {
 };
 const Default$3 = {
   animation: true,
-  template: '<div class="tooltip" role="tooltip">' + '<div class="tooltip-arrow"></div>' + '<div class="tooltip-inner"></div>' + '</div>',
+  ASP_DangKiThi: '<div class="tooltip" role="tooltip">' + '<div class="tooltip-arrow"></div>' + '<div class="tooltip-inner"></div>' + '</div>',
   trigger: 'hover focus',
   title: '',
   delay: 0,
@@ -3835,7 +3835,7 @@ class Tooltip extends BaseComponent {
     }
 
     const element = document.createElement('div');
-    element.innerHTML = this._config.template;
+    element.innerHTML = this._config.ASP_DangKiThi;
     const tip = element.children[0];
     this.setContent(tip);
     tip.classList.remove(CLASS_NAME_FADE$2, CLASS_NAME_SHOW$2);
@@ -3847,16 +3847,16 @@ class Tooltip extends BaseComponent {
     this._sanitizeAndSetContent(tip, this.getTitle(), SELECTOR_TOOLTIP_INNER);
   }
 
-  _sanitizeAndSetContent(template, content, selector) {
-    const templateElement = SelectorEngine.findOne(selector, template);
+  _sanitizeAndSetContent(ASP_DangKiThi, content, selector) {
+    const ASP_DangKiThiElement = SelectorEngine.findOne(selector, ASP_DangKiThi);
 
-    if (!content && templateElement) {
-      templateElement.remove();
+    if (!content && ASP_DangKiThiElement) {
+      ASP_DangKiThiElement.remove();
       return;
     } // we use append for html objects to maintain js events
 
 
-    this.setElementContent(templateElement, content);
+    this.setElementContent(ASP_DangKiThiElement, content);
   }
 
   setElementContent(element, content) {
@@ -4123,7 +4123,7 @@ class Tooltip extends BaseComponent {
     typeCheckConfig(NAME$4, config, this.constructor.DefaultType);
 
     if (config.sanitize) {
-      config.template = sanitizeHtml(config.template, config.allowList, config.sanitizeFn);
+      config.ASP_DangKiThi = sanitizeHtml(config.ASP_DangKiThi, config.allowList, config.sanitizeFn);
     }
 
     return config;
@@ -4221,7 +4221,7 @@ const Default$2 = { ...Tooltip.Default,
   offset: [0, 8],
   trigger: 'click',
   content: '',
-  template: '<div class="popover" role="tooltip">' + '<div class="popover-arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div>' + '</div>'
+  ASP_DangKiThi: '<div class="popover" role="tooltip">' + '<div class="popover-arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div>' + '</div>'
 };
 const DefaultType$2 = { ...Tooltip.DefaultType,
   content: '(string|element|function)'
