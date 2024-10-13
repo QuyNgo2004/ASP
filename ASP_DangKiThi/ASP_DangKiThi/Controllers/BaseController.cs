@@ -47,15 +47,11 @@ namespace ASP_DangKiThi.Controllers
             return View(strViewInstance, objRequest);
         }
 
-        protected virtual void AddData_Entry<T>(T objRequest)
-        {
+        protected virtual void AddData_Entry<T>(T objRequest){ }
 
-        }
+        protected virtual void UpdateData_Entry<T>(T objRequest){ }
 
-        protected virtual void UpdateData_Entry<T>(T objRequest)
-        {
-
-        }
+        protected virtual void DeleteData_Entry(int id) { }
 
     }
 }
