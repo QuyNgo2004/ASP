@@ -44,9 +44,8 @@ nav {
         }
     }
 
-    .btn-DaDangNhap,
-    .btn-DangNhap,
-    .btn-DangXuat {
+    /* Chung khung account hiện*/
+    .btn-style-account {
         color: var(--btn-text-color);
         border-radius: 4px;
         border: 0;
@@ -62,8 +61,8 @@ nav {
         transition: all 0.5s ease-in-out;
     }
 
-    /* Chỉnh riêng cho khung btn đã đăng nhập */
-    .btn-DaDangNhap-layout {
+    /* Chỉnh riêng cho khung account hiện*/
+    .btn-show-layout {
         height: 100%;
         background: #15548B;
         color: #D0E5FF;
@@ -71,16 +70,23 @@ nav {
         transition: all 0.5s ease-in-out;
     }
 
-    /* chỉnh riêng cho khung btn đăng xuất */
-    .btn-DangXuat-layout {
+    /* chỉnh riêng cho khung account ẩn */
+    .btn-hidden-layout {
         position: absolute;
-        bottom: -44px;
         left: 0;
         width: 100%;
         background: inherit;
         display: none;
         transition: all .1s ease-in-out;
         padding: 10px;
+    }
+
+    .btn-hidden-layout.ChuaDangNhap {
+        bottom: -90px;
+    }
+
+    .btn-hidden-layout.DaDangNhap {
+        bottom: -44px;
     }
 
     /* nút đã đăng nhập */
@@ -90,25 +96,28 @@ nav {
         inset: 0;
     }
 
-    /* Nút đăng xuất */
-    .btn-DangXuat {
+    /* Nút account */
+    .btn-account {
         width: 100%;
         background: #2387C3;
         color: #D0E5FF;
         justify-content: center;
         transition: all .1s ease-in-out;
+        margin-top: 4px;
     }
 
-    .btn-DangXuat:hover {
+    /* Nút account hover */
+    .btn-account:hover {
         color: #fff;
     }
 
-    .btn-DaDangNhap-layout:hover {
+    /* Toggle show hidden layout */
+    .btn-show-layout:hover {
         color: var(--btn-text-color);
         background-color: var(--btn-hover-bg-color);
         transition: all .5s ease-in-out;
 
-        .btn-DangXuat-layout {
+        .btn-hidden-layout {
             display: block;
             transition: all .5s ease-in-out;
         }

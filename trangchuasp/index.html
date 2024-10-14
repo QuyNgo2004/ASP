@@ -42,17 +42,29 @@
                     <!-- account -->
                     <div class="col-md-2 d-flex align-items-center justify-content-center">
                         <!-- If chưa đăng nhập -->
-                        <!-- <button class="btn-DangNhap">Đăng nhập</button> -->
+                        <div class="row w-100 h-100">
+                            <div class="col-md-12 btn-show-layout">
+                                <div class="btn-style-account btn-DaDangNhap">
+                                    <img src="./public/img/avatar.png" alt="">
+                                    <span>Chưa đăng nhập</span>
+                                    <span><i class="fa-solid fa-caret-down"></i></span>
+                                </div>
+                                <div class="btn-hidden-layout ChuaDangNhap">
+                                    <button class="btn-style-account btn-account">Đăng Nhập</button>
+                                    <button class="btn-style-account btn-account">Đăng ký</button>
+                                </div>
+                            </div>
+                        </div>
                         <!-- else đã đăng nhập -->
                         <div class="row w-100 h-100">
-                            <div class="col-md-12 btn-DaDangNhap-layout">
-                                <div class="btn-DaDangNhap">
+                            <div class="col-md-12 btn-show-layout">
+                                <div class="btn-style-account btn-DaDangNhap">
                                     <img src="./public/img/avatar.png" alt="">
                                     <span>Trần văn ba</span>
                                     <span><i class="fa-solid fa-caret-down"></i></span>
                                 </div>
-                                <div class="btn-DangXuat-layout">
-                                    <button class="btn-DangXuat">Đăng xuất</button>
+                                <div class="btn-hidden-layout DaDangNhap">
+                                    <button class="btn-style-account btn-account">Đăng xuất</button>
                                 </div>
                             </div>
                         </div>
