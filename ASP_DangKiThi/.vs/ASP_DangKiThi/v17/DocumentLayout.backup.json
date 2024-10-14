@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Tuan\\Git\\ASP_DangKiThi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\views\\account\\loginview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\views\\account\\loginview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\views\\shared\\nav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\views\\shared\\nav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\views\\shared\\_layout_blank.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\views\\shared\\_layout_blank.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|c:\\tuan\\git\\asp_dangkithi\\asp_dangkithi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588D2CE7-2EEF-4118-8F1F-FB0124AEB956}|ASP_DangKiThi\\ASP_DangKiThi.csproj|solutionrelative:asp_dangkithi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,33 +61,33 @@
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Footer.cshtml",
-              "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\Footer.cshtml",
-              "RelativeDocumentMoniker": "ASP_DangKiThi\\Views\\Shared\\Footer.cshtml",
-              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\Footer.cshtml*",
-              "RelativeToolTip": "ASP_DangKiThi\\Views\\Shared\\Footer.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T10:57:10.735Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginView.cshtml",
+              "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Account\\LoginView.cshtml",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Views\\Account\\LoginView.cshtml",
+              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Account\\LoginView.cshtml",
+              "RelativeToolTip": "ASP_DangKiThi\\Views\\Account\\LoginView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:19:50.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout_Blank.cshtml",
-              "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\_Layout_Blank.cshtml",
-              "RelativeDocumentMoniker": "ASP_DangKiThi\\Views\\Shared\\_Layout_Blank.cshtml",
-              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\_Layout_Blank.cshtml",
-              "RelativeToolTip": "ASP_DangKiThi\\Views\\Shared\\_Layout_Blank.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T10:42:31.056Z",
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "ASP_DangKiThi\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswDYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-14T12:18:16.003Z",
               "EditorCaption": ""
             },
             {
@@ -84,24 +96,63 @@
               "Title": "Nav.cshtml",
               "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\Nav.cshtml",
               "RelativeDocumentMoniker": "ASP_DangKiThi\\Views\\Shared\\Nav.cshtml",
-              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\Nav.cshtml*",
-              "RelativeToolTip": "ASP_DangKiThi\\Views\\Shared\\Nav.cshtml*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\Nav.cshtml",
+              "RelativeToolTip": "ASP_DangKiThi\\Views\\Shared\\Nav.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T10:28:52.122Z",
+              "WhenOpened": "2024-10-14T12:13:24.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ASP_DangKiThi\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ASP_DangKiThi\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwCUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T10:28:22.23Z",
+              "WhenOpened": "2024-10-14T12:13:21.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Program.cs",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Program.cs",
+              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Program.cs",
+              "RelativeToolTip": "ASP_DangKiThi\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T12:04:21.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "ASP_DangKiThi\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwG4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T11:45:26.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASP_DangKiThi\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASP_DangKiThi\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T11:45:24.944Z",
               "EditorCaption": ""
             }
           ]

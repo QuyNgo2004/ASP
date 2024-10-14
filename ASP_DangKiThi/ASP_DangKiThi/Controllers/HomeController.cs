@@ -1,4 +1,5 @@
 ﻿using ASP_DangKiThi.Models;
+using ASP_DangKiThi.Utiltity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,13 +7,14 @@ namespace ASP_DangKiThi.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController(db_ASP_ProjectContext objDBContext) : base(objDBContext)
+        public HomeController(CService objService) : base(objService)
         {
 
         }
 
         public IActionResult Index()
         {
+  
             return View();
         }
 

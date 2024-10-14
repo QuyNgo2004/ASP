@@ -1,9 +1,31 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang chủ";
+
+    Layout = "_Layout_Blank";
+
+    StringBuilder sbError = new StringBuilder();
+
+    // Kiểm tra nếu có lỗi trong ModelState cho khóa CCommon.MessageValue
+    if (ViewData.ModelState[CCommon.MessageValue] != null)
+    {
+        var arrError = ViewData.ModelState[CCommon.MessageValue].Errors;
+
+        // Kiểm tra nếu có ít nhất một lỗi
+        if (arrError.Count > 0)
+        {
+            // Lấy thông báo lỗi đầu tiên
+            sbError.AppendLine(CCommon.SetTextErrorLabel(arrError.First().ErrorMessage));
+        }
+
+        // Lặp qua các lỗi từ lỗi thứ hai trở đi và nối vào sbError
+        for (int i = 1; i < arrError.Count; i++)
+            sbError.AppendLine("<br/>" + CCommon.SetTextErrorLabel(arrError[i].ErrorMessage));
+    }
 }
 
 <div class="row layout-title">
     <div class="col-md-6 pt-4">
+        @Html.Raw(sbError)
         <h1 class="title-page">Cuộc thi học thuật trực tuyến</h1>
         <p class="subtitle-page">
             Hệ thống quản lý các cuộc thi học thuật giúp các trường học và khoa quản lý
