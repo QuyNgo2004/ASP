@@ -4,10 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
+
+    <!-- CSS Libraries -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/styles-component.css" />
+
+    <!-- Google Fonts -->
+    <style>
+        @@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
 </head>
 <body>
+<<<<<<< HEAD
 
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -44,11 +55,30 @@
             &copy; 2024 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+=======
+    <header>
+        <partial name="Nav" />
+    </header>
+    <section>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </section>
+    <footer>
+        <partial name="Footer" />
+    </footer>
+
+    <!-- JS Libraries -->
+>>>>>>> 0361362e634c45317e1ca4b97c40a33b6987ff68
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Custom Scripts -->
+    <script src="~/js/fontawesome.min.js"></script>
+    <script src="~/js/script.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<<<<<<< HEAD
 
     @await RenderSectionAsync("Scripts", required: false)
 
@@ -67,5 +97,7 @@
         });
     }
     </script>
+=======
+>>>>>>> 0361362e634c45317e1ca4b97c40a33b6987ff68
 </body>
 </html>

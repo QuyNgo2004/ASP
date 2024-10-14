@@ -1,21 +1,50 @@
-﻿<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ASP_DangKiThi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+﻿@inject IHttpContextAccessor httpCA
+
+@{
+    //Check đăng nhập hay chưa bằng session
+    string strMaDangNhap = CCommon.GetMaDangNhapSession(httpCA);
+
+    AccountModel objUser = new AccountModel();
+
+
+}
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <!-- menu links -->
+            <div class="col-md-2 home-link">
+                <a class="" href="#">cuocthihocthuat.com</a>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li class="active">
+                        <a href="#">Trang Chủ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    <li>
+                        <a href="#">Đăng ký thi đấu</a>
+                    </li>
+                    <li>
+                        <a href="#">Kết quả giải đấu</a>
                     </li>
                 </ul>
             </div>
+            <!-- account -->
+            <div class="col-md-2">
+                @if (strMaDangNhap == "")
+                {
+                    <a class="btn-DangNhap" asp-action="LoginView" asp-controller="Account">Đăng nhập</a>
+                }
+                else
+                {
+                    <div class="btn-DaDangNhap">
+                        <img src="./public/img/avatar.png" alt="">
+                        <span>Trần văn ba</span>
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+                    </div>
+                    <a class="btn-DangXuat" asp-action="Logout" asp-controller="Account">Đăng xuất</a>
+                }
+            </div>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>

@@ -1,0 +1,185 @@
+:root {
+    --header-bg-gradient-start: rgba(21, 84, 139, 1);
+    --header-bg-gradient-end: rgba(35, 135, 195, 1);
+    --link-hover-color: #F6BC2D;
+    --link-hover-color-alt: #ffd25f;
+    --btn-hover-bg-color: #205389;
+    --footer-bg-color: rgb(21, 84, 139);
+    --btn-text-color: #fff;
+    --link-text-color: white;
+}
+
+header {
+    background: linear-gradient(180deg, var(--header-bg-gradient-start) 0%, var(--header-bg-gradient-end) 100%);
+}
+
+nav {
+    li:active {
+        border-radius: 4px;
+        transition: all 0.1s;
+
+        a:active {
+            color: var(--link-hover-color);
+            font-weight: bold;
+        }
+    }
+
+    li.active {
+        border-radius: 4px;
+        transition: all 0.1s;
+
+        a {
+            font-weight: bold;
+        }
+    }
+
+    li:hover {
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.1s;
+
+        a {
+            color: var(--link-hover-color);
+            transition: all 0.1s;
+        }
+    }
+
+    .btn-DaDangNhap,
+    .btn-DangNhap,
+    .btn-DangXuat {
+        color: var(--btn-text-color);
+        border-radius: 4px;
+        border: 0;
+        padding: 4px 8px;
+        transition: all 0.1s;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        min-height: 35px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* Chỉnh riêng cho khung btn đã đăng nhập */
+    .btn-DaDangNhap-layout {
+        height: 100%;
+        background: #15548B;
+        color: #D0E5FF;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* chỉnh riêng cho khung btn đăng xuất */
+    .btn-DangXuat-layout {
+        position: absolute;
+        bottom: -44px;
+        left: 0;
+        width: 100%;
+        background: inherit;
+        display: none;
+        transition: all .1s ease-in-out;
+        padding: 10px;
+    }
+
+    /* nút đã đăng nhập */
+    .btn-DaDangNhap {
+        justify-content: space-around;
+        position: absolute;
+        inset: 0;
+    }
+
+    /* Nút đăng xuất */
+    .btn-DangXuat {
+        width: 100%;
+        background: #2387C3;
+        color: #D0E5FF;
+        justify-content: center;
+        transition: all .1s ease-in-out;
+    }
+
+    .btn-DangXuat:hover {
+        color: #fff;
+    }
+
+    .btn-DaDangNhap-layout:hover {
+        color: var(--btn-text-color);
+        background-color: var(--btn-hover-bg-color);
+        transition: all .5s ease-in-out;
+
+        .btn-DangXuat-layout {
+            display: block;
+            transition: all .5s ease-in-out;
+        }
+    }
+
+
+}
+
+/* nav UL chung */
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* nav LI chung */
+li {
+    min-width: 150px;
+    padding: 16px 20px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+
+    a {
+        border: 0;
+        color: var(--link-text-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.1s;
+    }
+}
+
+div.home-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        color: var(--link-hover-color);
+        text-decoration: none;
+    }
+}
+
+div.home-link:hover {
+    cursor: pointer;
+
+    a {
+        color: var(--link-hover-color-alt);
+    }
+}
+
+footer {
+    background: var(--footer-bg-color);
+    min-height: 97px;
+    display: flex;
+    align-items: center;
+
+    /* ul riêng trong footer */
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .home-link a {
+        text-transform: uppercase;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}

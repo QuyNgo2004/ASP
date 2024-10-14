@@ -8,10 +8,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
+
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/fontawesome.min.css">
-    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="./public/css/styles-header-footer.css">
     <link rel="stylesheet" href="./public/css/styles-component.css">
+    <link rel="stylesheet" href="./public/css/styles-overide-button-bootstrap.css">
 </head>
 
 <body>
@@ -37,16 +40,22 @@
                         </ul>
                     </div>
                     <!-- account -->
-                    <div class="col-md-2">
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
                         <!-- If chưa đăng nhập -->
                         <!-- <button class="btn-DangNhap">Đăng nhập</button> -->
                         <!-- else đã đăng nhập -->
-                        <div class="btn-DaDangNhap">
-                            <img src="./public/img/avatar.png" alt="">
-                            <span>Trần văn ba</span>
-                            <span><i class="fa-solid fa-caret-down"></i></span>
+                        <div class="row w-100 h-100">
+                            <div class="col-md-12 btn-DaDangNhap-layout">
+                                <div class="btn-DaDangNhap">
+                                    <img src="./public/img/avatar.png" alt="">
+                                    <span>Trần văn ba</span>
+                                    <span><i class="fa-solid fa-caret-down"></i></span>
+                                </div>
+                                <div class="btn-DangXuat-layout">
+                                    <button class="btn-DangXuat">Đăng xuất</button>
+                                </div>
+                            </div>
                         </div>
-                        <!-- <button class="btn-DangXuat">Đăng xuất</button> -->
                     </div>
                 </div>
             </div>
@@ -148,24 +157,106 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="row layout-title">
+                <div class="col-md-12 pt-4">
+                    <h1 class="title-page-center">xem kết quả thi đấu</h1>
+                    <p class="subtitle-page-uppercase">Tìm kiếm kết quả thi đấu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row layout-title">
+                <div class="col-md-12 pt-4">
+                    <h1 class="title-page-center">đăng ký thi đấu</h1>
+                    <p class="subtitle-page-uppercase">Nhập thông tin đăng ký</p>
+                </div>
+            </div>
+            <div class="row">
+                <form action="#">
+                    <div class="row pt-2 pb-2">
+                        <div class="col-md-12">
+                            <div class="input-container">
+                                <label for="student-id">Mã số sinh viên</label>
+                                <input type="text" id="student-id" placeholder="Input" value="22211tt0063">
+                                <span class="error-message">Mã số sinh viên không hợp lệ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2 pb-2">
+                        <div class="col-md-6">
+                            <div class="input-container">
+                                <label for="student-name">Tên thí sinh</label>
+                                <input type="text" id="student-name" placeholder="Input" value="Hoàng Văn Bá">
+                                <span class="error-message">Tên thí sinh không hợp lệ</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-container">
+                                <label for="teams-id">Tên đội thi đấu</label>
+                                <input type="text" id="teams-id" placeholder="Input" value="KSB Team">
+                                <span class="error-message">Tên đội thi đấu không hợp lệ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="btn btn-primary" id="submit-btn">Lưu</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-secondary" id="cancle-btn">Hủy</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-secondary" id="back-btn">Trở về</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row layout-title">
+                <div class="col-md-12 pt-4">
+                    <h1 class="title-page-center">cập nhật tài khoản</h1>
+                    <p class="subtitle-page-uppercase">Nhập thông tin tài khoản Dự thi</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-2 home-link">
                     <a class="" href="#">Cuộc thi học thuật</a>
                 </div>
-                <div class="col-md-2 d-flex align-items-center text-white">
-                    @copyright IRT 2024
-                </div>
-                <div class="col-md-8">
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#">Về chúng tôi</a>
-                        </li>
-                        <li>
-                            <a href="#">Liên hệ</a>
-                        </li>
-                    </ul>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">@copyright IRT 2024</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

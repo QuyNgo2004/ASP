@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {}
+    "E:\\TDC_HK5\\ASP.NET\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {}
   },
   "projects": {
-    "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {
+    "E:\\TDC_HK5\\ASP.NET\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
+        "projectUniqueName": "E:\\TDC_HK5\\ASP.NET\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
         "projectName": "ASP_DangKiThi",
-        "projectPath": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
-        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\obj\\",
+        "projectPath": "E:\\TDC_HK5\\ASP.NET\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "E:\\TDC_HK5\\ASP.NET\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -30,7 +30,6 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\School\\HK5\\ASP.Net\\Files\\EntityPackage": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,6 +87,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -96,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,16 +7,17 @@ namespace ASP_DangKiThi.Controllers
     public class BaseController : Controller
     {
         //Db
-        protected readonly db_ASP_ProjectContext objDBContext = new db_ASP_ProjectContext();
+        protected CService objService { get; }
+
+        public BaseController(
+            CService objService)
+        {
+            this.objService = objService;
+        }
 
         public int AutoID { get; set; } = 0;
 
         protected bool blIsUpdate = false;
-
-        public BaseController(db_ASP_ProjectContext objDBContext)
-        {
-            this.objDBContext = objDBContext;
-        }
 
         public IActionResult SaveData<T>(T objRequest, string strViewInstance, string strViewTo)
         {

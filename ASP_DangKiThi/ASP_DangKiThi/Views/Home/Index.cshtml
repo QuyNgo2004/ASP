@@ -1,8 +1,120 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang chủ";
+
+    Layout = "_Layout_Blank";
+
+    StringBuilder sbError = new StringBuilder();
+
+    // Kiểm tra nếu có lỗi trong ModelState cho khóa CCommon.MessageValue
+    if (ViewData.ModelState[CCommon.MessageValue] != null)
+    {
+        var arrError = ViewData.ModelState[CCommon.MessageValue].Errors;
+
+        // Kiểm tra nếu có ít nhất một lỗi
+        if (arrError.Count > 0)
+        {
+            // Lấy thông báo lỗi đầu tiên
+            sbError.AppendLine(CCommon.SetTextErrorLabel(arrError.First().ErrorMessage));
+        }
+
+        // Lặp qua các lỗi từ lỗi thứ hai trở đi và nối vào sbError
+        for (int i = 1; i < arrError.Count; i++)
+            sbError.AppendLine("<br/>" + CCommon.SetTextErrorLabel(arrError[i].ErrorMessage));
+    }
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row layout-title">
+    <div class="col-md-6 pt-4">
+        @Html.Raw(sbError)
+        <h1 class="title-page">Cuộc thi học thuật trực tuyến</h1>
+        <p class="subtitle-page">
+            Hệ thống quản lý các cuộc thi học thuật giúp các trường học và khoa quản lý
+            thông tin cuộc thi,
+            đăng ký thí sinh, đội thi, và quản lý kết quả cuộc thi. Hệ thống hỗ trợ sinh viên đăng ký tham
+            gia, ban tổ chức quản lý cuộc thi, và cung cấp kết quả một cách tự động.
+        </p>
+    </div>
+    <div class="col-md-4 pt-4">
+        <img class="img-responsive" src="~/img/image-index-page.png" alt="index-img-page">
+    </div>
+</div>
+<div class="row layout-challenge-list-card">
+    <div class="col-md-12">
+        <img class="img-responsive" src="~/img/image-index-cup.png" alt="cup">
+    </div>
+    <div class="col-md-12">
+        <h2>Danh sách cuộc thi</h2>
+    </div>
+    <div class="col-md-12">
+        <div class="row pt-2 pb-2">
+            <div class="col-md-6">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-header-title-layout">
+                            <span class="challenge-title">CHALLENGE #100</span>
+                            <span class="challenge-language ">C#</span>
+                        </div>
+                        <span class="challenge-status">Đã kết thúc</span>
+                    </div>
+                    <div class="result-button">
+                        <button class="DaKetThuc">XEM KẾT QUẢ</button>
+                    </div>
+                    <div class="challenge-time">
+                        <span class="text-left">THỜI GIAN</span>
+                        <div class="progress-bar DaKetThuc"></div>
+                        <div class="time-range">
+                            <span>13/08/2024 20:00</span>
+                            <span>19/08/2024 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-header-title-layout">
+                            <span class="challenge-title">CHALLENGE #100</span>
+                            <span class="challenge-language ChuaDienRa">C#</span>
+                        </div>
+                        <span class="challenge-status ChuaDienRa">Chưa diễn ra</span>
+                    </div>
+                    <div class="result-button">
+                        <button class="ChuaDienRa">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="challenge-time">
+                        <span class="text-left">THỜI GIAN</span>
+                        <div class="progress-bar ChuaDienRa"></div>
+                        <div class="time-range">
+                            <span>13/08/2024 20:00</span>
+                            <span>19/08/2024 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-2 pb-2">
+            <div class="col-md-6">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-header-title-layout">
+                            <span class="challenge-title">CHALLENGE #100</span>
+                            <span class="challenge-language DangDienRa">C#</span>
+                        </div>
+                        <span class="challenge-status DangDienRa">Đang diễn ra</span>
+                    </div>
+                    <div class="result-button">
+                        <button class="DangDienRa">Xem chi tiết</button>
+                    </div>
+                    <div class="challenge-time">
+                        <span class="text-left">THỜI GIAN</span>
+                        <div class="progress-bar DangDienRa"></div>
+                        <div class="time-range">
+                            <span>13/08/2024 20:00</span>
+                            <span>19/08/2024 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
