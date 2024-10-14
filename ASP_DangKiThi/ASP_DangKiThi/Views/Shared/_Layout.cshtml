@@ -4,51 +4,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/fontawesome.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles-component.css" asp-append-version="true" />
 
+    <!-- Google Fonts -->
     <style>
         @@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
-
-    <link rel="stylesheet" href="~/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/fontawesome.min.css">
-    <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="~/css/styles-component.css">
 </head>
 <body>
-    <partial name="Nav" />
+    <header>
+        <partial name="Nav" />
+    </header>
     <section>
         <div class="container">
             @RenderBody()
         </div>
     </section>
+    <footer>
+        <partial name="Footer" />
+    </footer>
 
-    <partial name="Footer" />
-
-    <script src="~/js/fontawesome.min.js"></script>
-    <script src="~/js/script.js"></script>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Libraries -->
+    <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="~/js/fontawesome.min.js" asp-append-version="true"></script>
+    <script src="~/js/script.js" asp-append-version="true"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-
-    <script>
-        function openModal(url) {
-            $.ajax({
-                url: url, // Địa chỉ URL để lấy nội dung modal
-                type: 'GET',
-                success: function (response) {
-                    $('#modalBody').html(response); // Đặt nội dung vào modal
-                    $('#myModal').modal('show'); // Mở modal
-                },
-                error: function () {
-                    alert('Error occurred while fetching data.');
-                }
-            });
-        }
-    </script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" asp-append-version="true"></script>
 </body>
 </html>
