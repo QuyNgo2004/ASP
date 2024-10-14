@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/styles-component.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <!-- menu links -->
+                    <div class="col-md-2 home-link">
+                        <a class="" href="#">cuocthihocthuat.com</a>
+                    </div>
+                    <div class="col-md-8">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Trang Chủ</a>
+                            </li>
+                            <li>
+                                <a href="#">Đăng ký thi đấu</a>
+                            </li>
+                            <li>
+                                <a href="#">Kết quả giải đấu</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- account -->
+                    <div class="col-md-2">
+                        <!-- If chưa đăng nhập -->
+                        <!-- <button class="btn-DangNhap">Đăng nhập</button> -->
+                        <!-- else đã đăng nhập -->
+                        <div class="btn-DaDangNhap">
+                            <img src="./public/img/avatar.png" alt="">
+                            <span>Trần văn ba</span>
+                            <span><i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                        <!-- <button class="btn-DangXuat">Đăng xuất</button> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row layout-title">
+                <div class="col-md-6 pt-4">
+                    <h1 class="title-page">Cuộc thi học thuật trực tuyến</h1>
+                    <p class="subtitle-page">Hệ thống quản lý các cuộc thi học thuật giúp các trường học và khoa quản lý
+                        thông tin cuộc thi,
+                        đăng ký thí sinh, đội thi, và quản lý kết quả cuộc thi. Hệ thống hỗ trợ sinh viên đăng ký tham
+                        gia, ban tổ chức quản lý cuộc thi, và cung cấp kết quả một cách tự động.</p>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <img class="img-responsive" src="./public/img/image-index-page.png" alt="index-img-page">
+                </div>
+            </div>
+            <div class="row layout-challenge-list-card">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="./public/img/image-index-cup.png" alt="cup">
+                </div>
+                <div class="col-md-12">
+                    <h2>Danh sách cuộc thi</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="row pt-2 pb-2">
+                        <div class="col-md-6">
+                            <div class="challenge-card">
+                                <div class="challenge-header">
+                                    <div class="challenge-header-title-layout">
+                                        <span class="challenge-title">CHALLENGE #100</span>
+                                        <span class="challenge-language ">C#</span>
+                                    </div>
+                                    <span class="challenge-status">Đã kết thúc</span>
+                                </div>
+                                <div class="result-button">
+                                    <button class="DaKetThuc">XEM KẾT QUẢ</button>
+                                </div>
+                                <div class="challenge-time">
+                                    <span class="text-left">THỜI GIAN</span>
+                                    <div class="progress-bar DaKetThuc"></div>
+                                    <div class="time-range">
+                                        <span>13/08/2024 20:00</span>
+                                        <span>19/08/2024 20:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="challenge-card">
+                                <div class="challenge-header">
+                                    <div class="challenge-header-title-layout">
+                                        <span class="challenge-title">CHALLENGE #100</span>
+                                        <span class="challenge-language ChuaDienRa">C#</span>
+                                    </div>
+                                    <span class="challenge-status ChuaDienRa">Chưa diễn ra</span>
+                                </div>
+                                <div class="result-button">
+                                    <button class="ChuaDienRa">ĐĂNG KÝ</button>
+                                </div>
+                                <div class="challenge-time">
+                                    <span class="text-left">THỜI GIAN</span>
+                                    <div class="progress-bar ChuaDienRa"></div>
+                                    <div class="time-range">
+                                        <span>13/08/2024 20:00</span>
+                                        <span>19/08/2024 20:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2 pb-2">
+                        <div class="col-md-6">
+                            <div class="challenge-card">
+                                <div class="challenge-header">
+                                    <div class="challenge-header-title-layout">
+                                        <span class="challenge-title">CHALLENGE #100</span>
+                                        <span class="challenge-language DangDienRa">C#</span>
+                                    </div>
+                                    <span class="challenge-status DangDienRa">Đang diễn ra</span>
+                                </div>
+                                <div class="result-button">
+                                    <button class="DangDienRa">Xem chi tiết</button>
+                                </div>
+                                <div class="challenge-time">
+                                    <span class="text-left">THỜI GIAN</span>
+                                    <div class="progress-bar DangDienRa"></div>
+                                    <div class="time-range">
+                                        <span>13/08/2024 20:00</span>
+                                        <span>19/08/2024 20:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 home-link">
+                    <a class="" href="#">Cuộc thi học thuật</a>
+                </div>
+                <div class="col-md-2 d-flex align-items-center text-white">
+                    @copyright IRT 2024
+                </div>
+                <div class="col-md-8">
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./public/js/fontawesome.min.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
