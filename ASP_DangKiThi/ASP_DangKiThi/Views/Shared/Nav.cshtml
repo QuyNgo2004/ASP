@@ -1,5 +1,5 @@
 ﻿<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ASP_DangKiThi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -15,6 +15,42 @@
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </nav> *@
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <!-- menu links -->
+                <div class="col-md-2 home-link">
+                    <a class="" href="#">cuocthihocthuat.com</a>
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li class="active">
+                            <a href="#">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Đăng ký thi đấu</a>
+                        </li>
+                        <li>
+                            <a href="#">Kết quả giải đấu</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- account -->
+                <div class="col-md-2">
+                    <!-- If chưa đăng nhập -->
+                    <!-- <button class="btn-DangNhap">Đăng nhập</button> -->
+                    <!-- else đã đăng nhập -->
+                    <div class="btn-DaDangNhap">
+                        <img src="./public/img/avatar.png" alt="">
+                        <span>Trần văn ba</span>
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+                    </div>
+                    <!-- <button class="btn-DangXuat">Đăng xuất</button> -->
+                </div>
             </div>
         </div>
     </nav>

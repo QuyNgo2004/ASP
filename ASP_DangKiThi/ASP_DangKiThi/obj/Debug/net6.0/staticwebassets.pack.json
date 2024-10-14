@@ -5,12 +5,52 @@
       "PackagePath": "staticwebassets\\ASP_DangKiThi.bundle.scp.css"
     },
     {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.min.css"
+    },
+    {
       "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\styles-component.css",
+      "PackagePath": "staticwebassets\\css\\styles-component.css"
+    },
+    {
       "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\img\\CardListHome.png",
+      "PackagePath": "staticwebassets\\img\\CardListHome.png"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\img\\image-index-cup.png",
+      "PackagePath": "staticwebassets\\img\\image-index-cup.png"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\img\\image-index-page.png",
+      "PackagePath": "staticwebassets\\img\\image-index-page.png"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\lib\\bootstrap\\LICENSE",
