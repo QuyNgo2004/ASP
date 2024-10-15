@@ -11,12 +11,12 @@ namespace ASP_DangKiThi.Utiltity
         public IConfiguration Configuration { get; }
 
         public CService(
-            db_ASP_ProjectContext objDBContext,
+            db_ASP_ProjectContext DbContext,
             IHttpContextAccessor objHttpContext,
             ILogger<BaseController> objLogger,
             IConfiguration objConfig)
         {
-            this.DbContext = objDBContext;
+            this.DbContext = DbContext;
             this.HttpContextAccessor = objHttpContext;
             this.Logger = objLogger;
             this.Configuration = objConfig;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASP_DangKiThi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4056dc7afba62fa92f18c88e7c34760693e89975")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14803a78418685f07ff8e55f257d194a7d79e183")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASP_DangKiThi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASP_DangKiThi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 ﻿using ASP_DangKiThi.Models;
+using ASP_DangKiThi.Utiltity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASP_DangKiThi.Controllers
@@ -6,14 +7,14 @@ namespace ASP_DangKiThi.Controllers
     public class ClassController : BaseController
     {
         // Constructor
-        public ClassController(db_ASP_ProjectContext objDBContext) : base(objDBContext)
+        public ClassController(CService objService) : base(objService)
         {
         }
 
         #region Views
         public IActionResult ListView()
         {
-            List<Class> listClass = this.objDBContext.Classes.Where(cl => cl.Deleted == 0).ToList();
+            List<Class> listClass = this.objService.DbContext.Classes.Where(cl => cl.Deleted == 0).ToList();
             return View(listClass);
         }
 
@@ -24,7 +25,7 @@ namespace ASP_DangKiThi.Controllers
 
         public IActionResult EditView(int id)
         {
-            Class cl = objDBContext.Classes.SingleOrDefault(cl => cl.AutoId == id);
+            Class cl = objService.DbContext.Classes.SingleOrDefault(cl => cl.AutoId == id);
             if (cl != null)
             {
                 return View(cl);

@@ -1,18 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ASP_DangKiThi.Models;
+using ASP_DangKiThi.Utiltity;
 
 namespace ASP_DangKiThi.Controllers
 {
     public class RoomController : BaseController
     {
-        public RoomController(db_ASP_ProjectContext objDBContext) : base(objDBContext)
+        public RoomController(CService objService) : base(objService)
         {
         }
 
         #region Views
         public IActionResult ListView()
         {
-            List<Room> listRoom = this.objDBContext.Rooms.Where(rm => rm.Deleted == 0).ToList();
+            List<Room> listRoom = this.objService.DbContext.Rooms.Where(rm => rm.Deleted == 0).ToList();
             return View(listRoom);
         }
 
@@ -23,7 +24,7 @@ namespace ASP_DangKiThi.Controllers
 
         public IActionResult EditView(int id)
         {
-            Room rm = objDBContext.Rooms.SingleOrDefault(rm => rm.AutoId == id);
+            Room rm = objService.DbContext.Rooms.SingleOrDefault(rm => rm.AutoId == id);
             if (rm != null)
             {
                 return View(rm);
@@ -43,14 +44,14 @@ namespace ASP_DangKiThi.Controllers
         #region Actions
         //protected override void AddData_Entry<Room>(Room rm)
         //{
-        //    objDBContext.Rooms.Add(rm);
-        //    objDBContext.SaveChanges();
+        //    objService.DbContext.Rooms.Add(rm);
+        //    objService.DbContext.SaveChanges();
         //    RedirectToAction("ListView");
         //}
         //protected override void UpdateData_Entry<Room>(Room rm)
         //{
-        //    objDBContext.Rooms.Update(rm);
-        //    objDBContext.SaveChanges();
+        //    objService.DbContext.Rooms.Update(rm);
+        //    objService.DbContext.SaveChanges();
         //    RedirectToAction("ListView");
         //}
         [HttpPost]
@@ -61,25 +62,25 @@ namespace ASP_DangKiThi.Controllers
             rm.CreatedAt = DateTime.Now;
             rm.CreatedBy = "admin";
             rm.UpdatedBy = "admin";
-            objDBContext.Rooms.Add(rm);
-            objDBContext.SaveChanges();
+            objService.DbContext.Rooms.Add(rm);
+            objService.DbContext.SaveChanges();
             return RedirectToAction("ListView");
         }
         [HttpPost]
         public void UpdateData(Room rm)
         {
-            objDBContext.Rooms.Update(rm);
-            objDBContext.SaveChanges();
+            objService.DbContext.Rooms.Update(rm);
+            objService.DbContext.SaveChanges();
             RedirectToAction("ListView");
         }
         [HttpPost]
         protected override void DeleteData_Entry(int id)
         {
-            Room rm = objDBContext.Rooms.SingleOrDefault(rm=>rm.AutoId == id);
+            Room rm = objService.DbContext.Rooms.SingleOrDefault(rm=>rm.AutoId == id);
             if(rm != null)
             {
-                objDBContext.Rooms.Remove(rm);
-                objDBContext.SaveChanges();
+                objService.DbContext.Rooms.Remove(rm);
+                objService.DbContext.SaveChanges();
             }
             RedirectToAction("ListView");
         }

@@ -9,79 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ASP_DangKiThi
 build_property.RootNamespace = ASP_DangKiThi
-build_property.ProjectDir = E:\TDC_HK5\ASP.NET\ASP\ASP_DangKiThi\ASP_DangKiThi\
+build_property.ProjectDir = C:\Tuan\Git\ASP_DangKiThi\ASP_DangKiThi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\TDC_HK5\ASP.NET\ASP\ASP_DangKiThi\ASP_DangKiThi
+build_property.MSBuildProjectDirectory = C:\Tuan\Git\ASP_DangKiThi\ASP_DangKiThi
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Account/AccountViewDetail.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Account/AccountViewDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50Vmlld0RldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Account/AccountViewEdit.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Account/AccountViewEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50Vmlld0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Account/AccountViewList.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Account/AccountViewList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50Vmlld0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Account/LoginView.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Account/LoginView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Home/Index.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Home/Privacy.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Room/CreateView.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Room/CreateView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxDcmVhdGVWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Room/ListView.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Room/ListView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxMaXN0Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Error.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Footer.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Modal.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Modal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1vZGFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Nav.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/Nav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/_Layout_Blank.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/_Layout_Blank.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQmxhbmsuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/_ViewImports.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/_ViewStart.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/TDC_HK5/ASP.NET/ASP/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/_Layout.cshtml]
+[C:/Tuan/Git/ASP_DangKiThi/ASP_DangKiThi/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7sdfkxd9sj
