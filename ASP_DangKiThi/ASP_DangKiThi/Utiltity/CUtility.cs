@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 
 namespace ASP_DangKiThi.Utiltity
 {
@@ -29,5 +30,12 @@ namespace ASP_DangKiThi.Utiltity
             }
         }
 
+        public static string ConvertByteArrayToString(byte[] arrBytes)
+        {
+            if (arrBytes == null || arrBytes.Length == 0)
+                return "";
+
+            return System.Text.Encoding.UTF8.GetString(arrBytes, 0, arrBytes.Length);
+        }
     }
 }

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {}
+    "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {}
   },
   "projects": {
-    "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {
+    "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
+        "projectUniqueName": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
         "projectName": "ASP_DangKiThi",
-        "projectPath": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
-        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\HK5\\ASP.Net\\Codes\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\obj\\",
+        "projectPath": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
+        "packagesPath": "C:\\Users\\TuanT\\.nuget\\packages\\",
+        "outputPath": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TuanT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -30,8 +30,8 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\School\\HK5\\ASP.Net\\Files\\EntityPackage": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
