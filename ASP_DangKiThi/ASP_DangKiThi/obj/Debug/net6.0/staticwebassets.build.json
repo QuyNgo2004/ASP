@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uplRrPA0uayRKflh/+bb84BWRB35V03NFlJY2e1wtcg=",
+  "Hash": "q1hNXoyhpP52575Enk0v5wVOASE4htifVpM11uJSIPE=",
   "Source": "ASP_DangKiThi",
   "BasePath": "_content/ASP_DangKiThi",
   "Mode": "Default",
@@ -91,25 +91,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\fontawesome.min.css"
-    },
-    {
-      "Identity": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\site.css",
-      "SourceId": "ASP_DangKiThi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\",
-      "BasePath": "_content/ASP_DangKiThi",
-      "RelativePath": "css/site.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\style.css",

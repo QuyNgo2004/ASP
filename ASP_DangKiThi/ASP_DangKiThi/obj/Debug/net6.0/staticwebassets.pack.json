@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\fontawesome.min.css"
     },
     {
-      "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
       "Id": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
