@@ -127,31 +127,33 @@ nav {
 }
 
 /* nav UL chung */
-ul {
+.list-item {
     display: flex;
     align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
 
-/* nav LI chung */
-li {
-    min-width: 150px;
-    padding: 16px 20px;
-    margin: 4px;
-    display: flex;
-    justify-content: center;
+    /* nav LI chung */
+    li {
+        min-width: 150px;
+        padding: 16px 20px;
+        margin: 4px;
+        display: flex;
+        justify-content: center;
 
-    a {
-        border: 0;
-        color: var(--link-text-color);
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all 0.1s;
+        a {
+            border: 0;
+            color: var(--link-text-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.1s;
+        }
     }
 }
+
+
 
 div.home-link {
     display: flex;
@@ -179,7 +181,7 @@ footer {
     align-items: center;
 
     /* ul riêng trong footer */
-    ul {
+    .list-item {
         display: flex;
         align-items: center;
     }
