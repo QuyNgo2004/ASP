@@ -130,7 +130,10 @@
     }
 }
 
-/* layout TextField */
+/* -----------------------------*/
+/* ---layout textfield data-- */
+/* -----------------------------*/
+
 /* Style for the container */
 .input-container {
     display: flex;
@@ -170,11 +173,79 @@
     font-size: 12px;
     margin-top: 5px;
     visibility: hidden;
-    display: none; /* Ban đầu ẩn thông báo lỗi hoàn toàn */
+    display: none;
+    /* Ban đầu ẩn thông báo lỗi hoàn toàn */
 }
 
 /* Show the error message */
 .input-container input:invalid+.error-message {
     visibility: visible;
     display: block;
+}
+
+/* -----------------------------*/
+/* ---layout textfield search-- */
+/* -----------------------------*/
+
+/* Style for the container */
+.input-search-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    padding: 8px 16px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #49454F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+
+    /* Style for the label */
+    label {
+        font-size: 14px;
+        color: #6b5f75;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+    }
+
+    /* style for search icon */
+    .search-icon-layout {
+        position: relative;
+
+        /* Style for the input field */
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 20px;
+            outline: none;
+            color: #49454F;
+            width: 100%;
+        }
+
+        /* Input field on focus */
+        input:focus {
+            border-color: #7c6a95;
+        }
+
+        /* Style for the error message */
+        .error-message {
+            color: #B02424;
+            font-size: 12px;
+            margin-top: 5px;
+            visibility: hidden;
+            display: none;
+            /* Ban đầu ẩn thông báo lỗi hoàn toàn */
+        }
+
+        /* Show the error message */
+        input:invalid+.error-message {
+            visibility: visible;
+            display: block;
+        }
+
+        span.search-icon {
+            position: absolute;
+            right: 0;
+            bottom: calc(50% - 12px);
+            margin-right: 16px;
+        }
+    }
 }
