@@ -33,7 +33,6 @@
     text-align: center;
 
     .challenge-card {
-        min-width: 487px;
         padding: 20px;
         background-color: #f9f9f9;
         border: 1px solid #ccc;
@@ -60,15 +59,15 @@
     }
 
     .challenge-status {
+        width: 98px;
+        height: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 98px;
         background-color: #CCCCCC;
         color: #000;
         font-size: 14px;
         font-weight: 500;
-        min-height: 32px;
         border-radius: 5px;
     }
 
@@ -79,23 +78,6 @@
         padding: 5px 10px;
         border-radius: 5px;
         display: inline-block;
-    }
-
-    .result-button {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .result-button button {
-        padding: 4px 4px;
-        border: none;
-        border-radius: 16px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        min-width: 256px;
-        min-height: 48px;
-        text-transform: uppercase;
     }
 
     .challenge-time {
@@ -248,4 +230,31 @@
             margin-right: 16px;
         }
     }
+}
+
+/* -----------------------------*/
+/* ---layout table-- */
+/* -----------------------------*/
+
+/* style thead th*/
+table.table-bordered>thead>tr>th {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    color: #49454F;
+}
+
+/* style tbody td*/
+table.table-bordered>tbody>tr>td {
+    border: 1px solid #ccc;
+}
+
+/* style tbody tr odd */
+table.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: #f6f5fa !important;
+}
+
+.scroll-table {
+    height: 300px;
+    overflow-y: auto;
 }
