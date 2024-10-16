@@ -1,32 +1,28 @@
 /* Layout title page */
-.layout-title {
-    display: flex;
-    justify-content: space-between;
 
-
-    .title-page,
-    .title-page-center {
-        color: #324CC7;
-        font-size: 26px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .title-page-center {
-        text-align: center;
-    }
-
-    .subtitle-page,
-    .subtitle-page-uppercase {
-        font-size: 20px;
-        text-align: justify;
-    }
-
-    .subtitle-page-uppercase {
-        text-transform: uppercase;
-        text-align: center;
-    }
+.title-page,
+.title-page-center {
+    color: #324CC7;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+.title-page-center {
+    text-align: center;
+}
+
+.subtitle-page,
+.subtitle-page-uppercase {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.subtitle-page-uppercase {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 
 /* Layout List card */
 .layout-challenge-list-card {
@@ -235,11 +231,10 @@
 /* -----------------------------*/
 /* ---layout table-- */
 /* -----------------------------*/
-
 /* style thead th*/
 table.table-bordered>thead>tr>th {
     background-color: #ddd;
-    border: 1px solid #ccc;
+    border-bottom: #e8e0e8;
     text-transform: uppercase;
     color: #49454F;
 }
@@ -264,4 +259,88 @@ table.table-striped>tbody>tr:nth-of-type(odd)>* {
         top: -9px;
         z-index: 10;
     }
+
+    table {
+
+        td,
+        th {
+            vertical-align: top;
+            padding: 12px;
+        }
+
+        tr {
+            white-space: nowrap;
+        }
+
+        tbody th {
+            text-align: left;
+            font-weight: 500;
+        }
+
+        tbody td {
+            display: table-cell;
+            vertical-align: inherit;
+            unicode-bidi: isolate;
+        }
+    }
+}
+
+/* combobox layout */
+/* Định dạng tổng quan cho combobox */
+.custom-select {
+    background-color: #ece7f3;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 16px;
+    border-bottom: 1px solid #49454F;
+}
+
+/* Định dạng cho nhãn (text) phía trên combobox */
+.custom-select label {
+    font-size: 12px;
+    color: #6c636f;
+    /* Màu xám nhạt */
+    margin-bottom: 4px;
+    display: block;
+}
+
+/* Định dạng cho thẻ <select> */
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    color: #49454F;
+    /* Màu chữ cho option "Input" */
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Custom mũi tên thả xuống */
+.custom-select select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #49454F;
+    /* Màu của mũi tên */
+}
+
+/* Custom kiểu của combobox */
+.custom-select select {
+    background-image: url("../img/caret-down-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.custom-select select:focus {
+    outline: none;
 }

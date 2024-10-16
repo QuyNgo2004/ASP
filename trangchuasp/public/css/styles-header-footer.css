@@ -1,6 +1,7 @@
 :root {
     --header-bg-gradient-start: rgba(21, 84, 139, 1);
     --header-bg-gradient-end: rgba(35, 135, 195, 1);
+    --link-active-color: #F6BC2D;
     --link-hover-color: #F6BC2D;
     --link-hover-color-alt: #ffd25f;
     --btn-hover-bg-color: #205389;
@@ -14,15 +15,7 @@ header {
 }
 
 nav {
-    li:active {
-        border-radius: 4px;
-        transition: all 0.1s;
 
-        a:active {
-            color: var(--link-hover-color);
-            font-weight: bold;
-        }
-    }
 
     li.active {
         border-radius: 4px;
@@ -30,6 +23,7 @@ nav {
 
         a {
             font-weight: bold;
+            color: var(--link-active-color);
         }
     }
 
