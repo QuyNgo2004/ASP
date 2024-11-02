@@ -1,0 +1,59 @@
+﻿@model DangKyHocThuat_Web.Models.Class
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white text-center">
+                    <h5 class="mb-0">Thông tin lớp</h5>
+                </div>
+                <div class="card-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Auto ID:</label>
+                            <label class="form-control">@Model.AutoId</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Tên lớp:</label>
+                            <label class="form-control">@Model.ClassName</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Mã giảng viên:</label>
+                            <label class="form-control">@Model.Professor.ProfessorId</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email:</label>
+                            <label class="form-control">@Model.Professor.ProfessorName</label>
+                        </div>
+                    </div>
+                 
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Người tạo:</label>
+                            <label class="form-control">@Model.CreatedBy</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Thời gian cập nhật cuối:</label>
+                            <label class="form-control">@Model.UpdatedAt.ToString("dd/MM/yyyy HH:mm:ss")</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Người cập nhật cuối:</label>
+                            <label class="form-control">@Model.UpdatedBy</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="List" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
