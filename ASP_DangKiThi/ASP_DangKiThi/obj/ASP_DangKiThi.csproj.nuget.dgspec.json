@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {}
+    "C:\\Tuan\\Git\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {}
   },
   "projects": {
-    "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {
+    "C:\\Tuan\\Git\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
+        "projectUniqueName": "C:\\Tuan\\Git\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
         "projectName": "ASP_DangKiThi",
-        "projectPath": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
+        "projectPath": "C:\\Tuan\\Git\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\ASP_DangKiThi.csproj",
         "packagesPath": "C:\\Users\\TuanT\\.nuget\\packages\\",
-        "outputPath": "C:\\Tuan\\Git\\ASP_DangKiThi\\ASP_DangKiThi\\obj\\",
+        "outputPath": "C:\\Tuan\\Git\\ASP\\ASP_DangKiThi\\ASP_DangKiThi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
