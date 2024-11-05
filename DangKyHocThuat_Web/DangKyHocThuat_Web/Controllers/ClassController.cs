@@ -81,6 +81,14 @@ namespace DangKyHocThuat_Web.Controllers
             try
             {
                 v_objData = _context.Classes.FirstOrDefault(it => it.AutoId == id);
+
+                if (v_objData != null)
+                {
+                    v_objData.Professor = _context.Professors.FirstOrDefault(it => it.AutoId == v_objData.ProfessorId);
+
+                    if (v_objData.Professor == null)
+                        v_objData.Professor = new Professor();
+                }
             }
             catch (Exception ex)
             {
