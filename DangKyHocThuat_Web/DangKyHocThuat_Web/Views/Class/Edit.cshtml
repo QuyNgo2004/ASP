@@ -1,5 +1,62 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model ClassViewModel
+
 @{
+    string v_strTitle = "Thêm mới";
+    if (Model.AutoId != 0)
+        v_strTitle = "Cập nhật";
+
+    ViewData["Title"] = v_strTitle + " lớp";
+
 }
+
+<h1 class="text-primary mb-4">@v_strTitle lớp</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="Save_Data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <!--Các field ẩn-->
+                    <input type="hidden" asp-for="AutoId" />
+                    <input type="hidden" asp-for="Deleted" />
+                    <input type="hidden" asp-for="CreatedAt" />
+                    <input type="hidden" asp-for="CreatedBy" />
+                    <input type="hidden" asp-for="UpdatedBy" />
+                    <input type="hidden" asp-for="UpdatedAt" />
+                    <!---->
+
+                    <div class="form-group mb-3">
+                        <label asp-for="ClassName" class="control-label">Tên lớp:</label>
+                        <input asp-for="ClassName" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="ProfessorId" class="control-label">Giảng viên:</label>
+                        <select asp-for="ProfessorId" class="form-control" data-mdb-select-init>
+                            @foreach (Professor v_objItem in Model.Professors)
+                            {
+                                if (v_objItem.AutoId == Model.ProfessorId)
+                                {
+                                    <option selected>
+                                        @v_objItem.ProfessorId | @v_objItem.ProfessorName
+                                    </option>
+                                }
+                                else
+                                {
+                                    <option value="@v_objItem.AutoId"> @v_objItem.ProfessorId | @v_objItem.ProfessorName</option>
+                                }
+                            }                      
+                        </select>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="List" class="btn btn-secondary">Quay về</a>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
