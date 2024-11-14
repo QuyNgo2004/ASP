@@ -1,0 +1,88 @@
+﻿@model IPagedList<StudentViewModel>
+
+@{
+    ViewData["Title"] = "Danh sách sinh viên";
+
+}
+
+<div class="container mt-5">
+    <h2 class="text-primary mb-4">Danh sách sinh viên</h2>
+
+    <form asp-action="Tim_Kiem" asp-controller="Student" method="get">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="form-group mb-3">
+            <label class="control-label">Đội thi:</label>
+            <select class="form-control" name="p_iTeam_ID" data-mdb-select-init>
+                @foreach (Team v_objItem in ViewBag.Teams)
+                {
+                    <option value="@v_objItem.AutoId"> @v_objItem.TeamName</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label class="control-label">Giảng viên:</label>
+            <select class="form-control" name="p_iClass_ID" data-mdb-select-init>
+                @foreach (Class v_objItem in ViewBag.Classes)
+                {
+                    <option value="@v_objItem.AutoId"> @v_objItem.ClassName</option>
+                }
+            </select>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+    </form>
+
+    <br />
+
+    <p>
+        <a class="btn btn-success btn-lg" asp-action="Edit" asp-route-id="0">Thêm mới</a>
+    </p>
+
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Mã sinh viên</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Nơi sinh</th>
+                <th>Tên lớp</th>
+                <th>Tên đội thi</th>
+                <th style="width: 200px">#</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (StudentViewModel v_objItem in Model)
+            {
+                <tr>
+                    <td><a style="text-decoration: none" asp-action="Detail" asp-route-id="@v_objItem.AutoId">@v_objItem.StudentId</a></td>
+                    <td>@v_objItem.StudentName</td>
+                    <td>@v_objItem.StudentDoB</td>
+                    <td>@v_objItem.StudentPoB</td>
+                    <td>@v_objItem.Class.ClassName</td>
+                    <td>@v_objItem.Team.TeamName</td>
+
+                    <td>
+                        <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@v_objItem.AutoId">Cập nhật</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@v_objItem.AutoId" onclick="return confirm('Bạn có chắc chắn muốn xóa dòng dữ liệu này không?');">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Phân trang -->
+    <div class="text-center mt-4">
+        @Html.PagedListPager(Model, page => Url.Action("List", new { p_iPage = page, p_iClass_ID = 0, p_iTeam_ID = 0 }),
+                 new X.PagedList.Mvc.Core.PagedListRenderOptions
+        {
+            ContainerDivClasses = new[] { "pagination" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" },
+            EllipsesFormat = " ... ",
+        })
+    </div>
+</div>

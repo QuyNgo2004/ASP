@@ -1,0 +1,69 @@
+﻿@model StudentViewModel
+
+@{
+    string v_strTitle = "Thêm mới";
+    if (Model.AutoId != 0)
+        v_strTitle = "Cập nhật";
+
+    ViewData["Title"] = v_strTitle + " sinh viên";
+
+}
+
+<h1 class="text-primary mb-4">@v_strTitle sinh viên</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="Save_Data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <!--Các field ẩn-->
+                    <input type="hidden" asp-for="AutoId" />
+                    <input type="hidden" asp-for="Deleted" />
+                    <input type="hidden" asp-for="CreatedAt" />
+                    <input type="hidden" asp-for="CreatedBy" />
+                    <input type="hidden" asp-for="UpdatedBy" />
+                    <input type="hidden" asp-for="UpdatedAt" />
+                    <!---->
+
+                    <div class="form-group mb-3">
+                        <label asp-for="StudentId" class="control-label">Mã sinh viên:</label>
+                        <input asp-for="StudentId" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="StudentName" class="control-label">Tên sinh viên:</label>
+                        <input asp-for="StudentName" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label">Đội thi:</label>
+                        <select class="form-control" asp-for="TeamId" data-mdb-select-init asp-items="@ViewBag.Teams"></select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label">Giảng viên:</label>
+                        <select class="form-control" asp-for="ClassId" data-mdb-select-init asp-items="@ViewBag.Classes">
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="StudentDoB" class="control-label">Ngày sinh:</label>
+                        <input type="datetime" asp-for="StudentDoB" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="StudentPoB" class="control-label">Nơi sinh:</label>
+                        <input type="text" asp-for="StudentPoB" class="form-control" />
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="List" class="btn btn-secondary">Quay về</a>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
