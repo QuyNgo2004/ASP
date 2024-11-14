@@ -1,39 +1,34 @@
 /* Layout title page */
-.layout-title {
-    display: flex;
-    justify-content: space-between;
 
-
-    .title-page,
-    .title-page-center {
-        color: #324CC7;
-        font-size: 26px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .title-page-center {
-        text-align: center;
-    }
-
-    .subtitle-page,
-    .subtitle-page-uppercase {
-        font-size: 20px;
-        text-align: justify;
-    }
-
-    .subtitle-page-uppercase {
-        text-transform: uppercase;
-        text-align: center;
-    }
+.title-page,
+.title-page-center {
+    color: #324CC7;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+.title-page-center {
+    text-align: center;
+}
+
+.subtitle-page,
+.subtitle-page-uppercase {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.subtitle-page-uppercase {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 
 /* Layout List card */
 .layout-challenge-list-card {
     text-align: center;
 
     .challenge-card {
-        min-width: 487px;
         padding: 20px;
         background-color: #f9f9f9;
         border: 1px solid #ccc;
@@ -60,15 +55,15 @@
     }
 
     .challenge-status {
+        width: 98px;
+        height: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 98px;
         background-color: #CCCCCC;
         color: #000;
         font-size: 14px;
         font-weight: 500;
-        min-height: 32px;
         border-radius: 5px;
     }
 
@@ -79,23 +74,6 @@
         padding: 5px 10px;
         border-radius: 5px;
         display: inline-block;
-    }
-
-    .result-button {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .result-button button {
-        padding: 4px 4px;
-        border: none;
-        border-radius: 16px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        min-width: 256px;
-        min-height: 48px;
-        text-transform: uppercase;
     }
 
     .challenge-time {
@@ -130,7 +108,10 @@
     }
 }
 
-/* layout TextField */
+/* -----------------------------*/
+/* ---layout textfield data-- */
+/* -----------------------------*/
+
 /* Style for the container */
 .input-container {
     display: flex;
@@ -170,11 +151,196 @@
     font-size: 12px;
     margin-top: 5px;
     visibility: hidden;
-    display: none; /* Ban đầu ẩn thông báo lỗi hoàn toàn */
+    display: none;
+    /* Ban đầu ẩn thông báo lỗi hoàn toàn */
 }
 
 /* Show the error message */
 .input-container input:invalid+.error-message {
     visibility: visible;
     display: block;
+}
+
+/* -----------------------------*/
+/* ---layout textfield search-- */
+/* -----------------------------*/
+
+/* Style for the container */
+.input-search-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    padding: 8px 16px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #49454F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+
+    /* Style for the label */
+    label {
+        font-size: 14px;
+        color: #6b5f75;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+    }
+
+    /* style for search icon */
+    .search-icon-layout {
+        position: relative;
+
+        /* Style for the input field */
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 20px;
+            outline: none;
+            color: #49454F;
+            width: 100%;
+        }
+
+        /* Input field on focus */
+        input:focus {
+            border-color: #7c6a95;
+        }
+
+        /* Style for the error message */
+        .error-message {
+            color: #B02424;
+            font-size: 12px;
+            margin-top: 5px;
+            visibility: hidden;
+            display: none;
+            /* Ban đầu ẩn thông báo lỗi hoàn toàn */
+        }
+
+        /* Show the error message */
+        input:invalid+.error-message {
+            visibility: visible;
+            display: block;
+        }
+
+        span.search-icon {
+            position: absolute;
+            right: 0;
+            bottom: calc(50% - 12px);
+            margin-right: 16px;
+        }
+    }
+}
+
+/* -----------------------------*/
+/* ---layout table-- */
+/* -----------------------------*/
+/* style thead th*/
+table.table-bordered>thead>tr>th {
+    background-color: #ddd;
+    border-bottom: #e8e0e8;
+    text-transform: uppercase;
+    color: #49454F;
+}
+
+/* style tbody td*/
+table.table-bordered>tbody>tr>td {
+    border: 1px solid #ccc;
+}
+
+/* style tbody tr odd */
+table.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: #f6f5fa !important;
+}
+
+/* style for header table fixed when scroll below: */
+.table-responsive {
+    max-height: 300px;
+    overflow-y: auto;
+
+    .table-sticky>thead>tr>th {
+        position: sticky;
+        top: -9px;
+        z-index: 10;
+    }
+
+    table {
+
+        td,
+        th {
+            vertical-align: top;
+            padding: 12px;
+        }
+
+        tr {
+            white-space: nowrap;
+        }
+
+        tbody th {
+            text-align: left;
+            font-weight: 500;
+        }
+
+        tbody td {
+            display: table-cell;
+            vertical-align: inherit;
+            unicode-bidi: isolate;
+        }
+    }
+}
+
+/* combobox layout */
+/* Định dạng tổng quan cho combobox */
+.custom-select {
+    background-color: #ece7f3;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 16px;
+    border-bottom: 1px solid #49454F;
+}
+
+/* Định dạng cho nhãn (text) phía trên combobox */
+.custom-select label {
+    font-size: 12px;
+    color: #6c636f;
+    /* Màu xám nhạt */
+    margin-bottom: 4px;
+    display: block;
+}
+
+/* Định dạng cho thẻ <select> */
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    color: #49454F;
+    /* Màu chữ cho option "Input" */
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Custom mũi tên thả xuống */
+.custom-select select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #49454F;
+    /* Màu của mũi tên */
+}
+
+/* Custom kiểu của combobox */
+.custom-select select {
+    background-image: url("../img/caret-down-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.custom-select select:focus {
+    outline: none;
 }
